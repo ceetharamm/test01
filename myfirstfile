@@ -1,0 +1,248 @@
+git init
+
+git config --global user.name "Polarapu Prasad"
+
+git config --global user.email "Polarapuprasad@gmail.com"
+
+git config --list
+
+Git Phases:-
+----------------
+Workspace
+Staging / index area
+Local repo
+
+........................
+
+touch file-name
+
+touch file1
+ls
+git status
+git add file1
+git status
+git commit -m "first commit" file1
+git status
+git log
+git show cid
+
+
+
+touch file2 file3 file4
+ls
+git status
+git add file2 file3 file4
+or
+git add .
+or
+git add *
+or
+git add -A
+
+git status
+git commit -m "label" 
+git status
+git log
+git show cid
+
+
+git reset HEAD file-name (staging to workspace)
+git reset --soft cid  (local to staging)
+git reset --mixed cid or git reset HEAD~1 ( local to workspace)
+git reset --hard cid (to delete files and commit)
+
+git clone https://github.com/polarapu/batch46.git
+ls
+cd batch46
+ls
+touch Prasad
+ls
+git status
+git add Prasad
+git commit -m "test file"
+git push
+
+mkdir Prasad
+cd Prasad
+touch f1 f2 f3
+cd ..
+git add .
+git commit -m "sample commit"
+git push
+
+
+
+----------------------------------------------
+git clone https://github.com/polarapu/batch46.git
+ls
+cd batch46
+touch name
+
+git status
+git add name
+git commit -m "commit by user"
+git push
+git pull
+esc :wq
+git push
+
+rm -rf devops5
+
+git pull
+rm -rf file
+git status
+git add .
+git commit "delete"
+git push
+git pull
+git push
+========================
+git log
+git log -3
+git log --oneline
+git log --oneline -5
+git log --author=name
+git log --since=yy-mm-dd
+or
+git log --after=yy-mm-dd
+
+git log --until=yy-mm-21
+or
+git log --before=yy-mm-dd
+
+git log --after="yy-mm-23 08:00"  --before="yy-mm-25 9:00"
+git log -- file-name
+========================================
+
+Branch ?
+------------
+Master (default)
+
+git branch
+
+git branch release1
+git checkout release1
+git branch
+git merge branch-name
+
+git branch -d branch-name
+
+git push path/of/c-repo branch-name
+
+git push origin branch-name
+
+git push origin -d branch-name
+
+-============================
+
+touch file-name
+touch file1
+ls
+touch file2 file3 file4
+
+CAT
+-----
+cat file4
+
+cat > file5
+...
+...
+ctrl+d
+
+cat >> file5
+....
+....
+ctrl+d
+
+vi or vim
+-----------
+vi file-name
+---------------
+esc i
+Hello file
+..
+...
+esc :w
+esc :q
+or
+esc :wq
+
+git status
+
+git s
+
+git config --global alias.s "status"
+
+git status
+git s
+
+git config --list
+
+git config --global alias.l "log"
+
+git config --global alias.l1 "oneline"
+
+
+git config --global --unset alias.l1
+
+git config --global alias.l1 "log --oneline"
+
+git config --global --unset alias.s
+
+git config --global --unset user.name
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
