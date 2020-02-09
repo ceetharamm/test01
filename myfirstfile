@@ -1,3 +1,4 @@
+Author : Yaswini Maddipati 
 git init
 
 git config --global user.name "Polarapu Prasad"
@@ -190,59 +191,5 @@ git config --global alias.l1 "log --oneline"
 git config --global --unset alias.s
 
 git config --global --unset user.name
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
